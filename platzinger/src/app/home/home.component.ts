@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { User } from '../interface/user';
+import { ListOfFriendsService } from '../service/list-of-friends.service';
 
 @Component({
   selector: 'app-home',
@@ -8,14 +8,10 @@ import { User } from '../interface/user';
 })
 export class HomeComponent implements OnInit {
 
+  public users = ListOfFriendsService.get_usuarios();
+
   constructor() { 
 
-    let usuario: User = {
-
-      nick : 'MrRojas' ,
-      age: 21,
-      idu : 'RA_CUSTOMER_TRX_ALL'
-    }
   }
 
   ngOnInit() {
