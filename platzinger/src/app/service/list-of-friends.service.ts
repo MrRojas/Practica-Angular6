@@ -14,27 +14,32 @@ export class ListOfFriendsService {
     {
       nick : 'MrRojas' ,
       age: 21,
-      idu : 'Javascript'
+      idu : 'Javascript',
+      friend: true
     },
     {
       nick : 'Monpeco' ,
       age: 36,
-      idu : 'C'
+      idu : 'C',
+      friend: false
     },
     {
       nick : 'APerdomo' ,
       age: 22,
-      idu : 'Angular'
+      idu : 'Angular',
+      friend: true
     },
     {
       nick : 'EE' ,
       age: 38,
-      idu : 'PHP'
+      idu : 'PHP',
+      friend: false
     },
     {
       nick : 'Yris' ,
       age: 15,
-      idu : 'ORACLE'
+      idu : 'ORACLE',
+      friend: true
     }
 
    ];
