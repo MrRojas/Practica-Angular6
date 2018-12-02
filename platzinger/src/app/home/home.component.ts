@@ -8,10 +8,10 @@ import { ListOfFriendsService } from '../service/list-of-friends.service';
 })
 export class HomeComponent implements OnInit {
 
-  public users = ListOfFriendsService.get_usuarios();
+  users: any; 
 
-  constructor() { 
-
+  constructor(private list: ListOfFriendsService) { 
+    this.users = list.get_usuarios()
   }
 
   ngOnInit() {
