@@ -13,6 +13,10 @@ export class ConversationComponent implements OnInit {
   id: any;
   user: User; 
 
+  price: number; 
+  price2: number; 
+
+
   constructor(private activatedRouter: ActivatedRoute , private list: ListOfFriendsService ) { 
 
     this.id = activatedRouter.snapshot.params['uid']
@@ -20,7 +24,11 @@ export class ConversationComponent implements OnInit {
     this.user = list.get_usuarios().find((record)=>{
       return record.idu ==  this.id;
     })
-    
+
+    this.price = 4528.7255544466486
+    this.price2 = 4560
+
+
   }
 
   ngOnInit() {
